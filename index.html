@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Hangman - Bruma Andrei</title>
+      <h1 id="title">Hangman Game</h1>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <section id="sect1">
+         <input type="password" id="wordInp" placeholder="Type the word...">
+         <button class="butStr" id = "btn" type="button" onclick="checkWord()">Start</button>
+         <br/> <br/> 
+         <button class="butStr" id = "btnRes" type="button" onclick="location.reload()">Restart Game</button>
+         <br/> <br/> 
+         <br>  
+      </section>
+      <div id = "addBtn"></div>
+      <div id="status">
+         <h1 id= "lif"><strong>Lives left: </strong></h1>
+      </div>
+      <div id="realLifes">
+         <p id="lifes"></p>
+      </div>
+      <div id="guess">
+         <h id = "wordGs"> </h>
+      </div>
+      <h3 class="message" id="alertMessage"></h3>
+      <h3 class="copyright">Copyright &copy; 2022 Andrei Bruma</h3>
+      <div>
+         <svg class="drawing">
+            <line x1="5%" y1="85%" x2="35%" y2="85%" />
+            <line x1="20%" y1="5%" x2="20%" y2="85%" />
+            <line x1="20%" y1="5%" x2="75%" y2="5%" />
+            <line x1="75%" y1="5%" x2="75%" y2="20%" />
+            <line x1="20%" y1="25%" x2="45%" y2="5%"/>
+            <circle r="10%" cx="75%" cy="30%" class="elements" />
+            <line x1="75%" y1="40%" x2="75%" y2="60%" class="elements" />
+            <line x1="60%" y1="40%" x2="75%" y2="50%" class="elements" />
+            <line x1="90%" y1="40%" x2="75%" y2="50%" class="elements" />
+            <line x1="75%" y1="60%" x2="90%" y2="70%" class="elements" />
+            <line x1="75%" y1="60%" x2="60%" y2="70%" class="elements" />
+         </svg>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
